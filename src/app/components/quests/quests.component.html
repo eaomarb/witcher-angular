@@ -1,0 +1,30 @@
+<div class="row">
+
+<table class="table col-12" id="table" data-toggle="table" data-pagination="true" data-search="true">
+    <thead>
+        <tr>
+            <th id="name" data-field="name" data-sortable="true">Name</th>
+            <th id="type" data-field="type" data-sortable="true">Type</th>
+            <th id="level" data-field="level" data-sortable="true">Level</th>
+            <th id="ng+" data-field="ng+" data-sortable="true">NG+</th>
+            <th id="trigger" data-field="trigger" data-sortable="true">Trigger</th>
+            <th id="region" data-field="region" data-sortable="true">Region</th>
+            <th id="from" style="width: 15%"  data-field="from" data-sortable="true">From</th>
+            <th id="comment" data-field="comment" data-sortable="true">Comment</th>
+        </tr>
+    </thead>
+
+    <tbody id="table-body">
+        <tr *ngFor="let fila of datos">
+            <td> {{ fila.NAME }} </td>
+            <td> {{ fila.TYPE }} </td>
+            <td> {{ fila.LEVEL }} </td>
+            <td> {{ fila.NGPLUS }} </td>
+            <td> {{ fila.TRIGGER }} </td>
+            <td> {{ fila.REGION }} </td>
+            <td> {{ fila.FROM }} </td>
+            <td> {{ fila.COMMENT }} </td>
+        </tr>
+    </tbody>
+</table> 
+</div>
